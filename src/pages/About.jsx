@@ -50,9 +50,15 @@ export default function About() {
     <div className="pb-4 pt-10">
      <SectionTitle title="About" subtitle="Project supervision and researcher details." />
 
-      <div className="card-surface mb-6 p-4 text-center sm:p-6">
-        <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">Project ID</p>
-        <p className="mt-1 text-2xl font-bold text-slate-800">25-26J-531</p>
+      <div className="card-surface mb-6 grid gap-4 p-4 text-center sm:grid-cols-2 sm:p-6">
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">Project ID</p>
+          <p className="mt-1 text-2xl font-bold text-slate-800">25-26J-531</p>
+        </div>
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">Research Period</p>
+          <p className="mt-1 text-2xl font-bold text-slate-800">July 2025 - July 2026</p>
+        </div>
       </div>
 
       <div className="grid gap-6 lg:grid-cols-3">
