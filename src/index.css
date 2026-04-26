@@ -37,3 +37,11 @@ body {
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 }
+
+.tech-stack-icon {
+  transition: transform 0.2s ease;
+}
+
+.tech-stack-icon:hover {
+  transform: scale(1.2);
+}

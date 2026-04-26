@@ -1,60 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import SectionTitle from '../components/SectionTitle';
+import TechStackIcons from '../components/TechStackIcons';
 import systemDiagram from '../project_files/system_diagram.jpg';
-
-const technologies = [
-  
-  {
-    name: 'Java for Android application',
-    icon: '☕',
-    iconLabel: 'Java icon',
-  },
-  {
-    name: 'Android Studio',
-    icon: '🤖',
-    iconLabel: 'Android Studio icon',
-  },
-  {
-    name: 'SQLite or Room',
-    icon: '🗄️',
-    iconLabel: 'Database icon',
-  },
-  {
-    name: 'Google Maps & Places API',
-    icon: '📍',
-    iconLabel: 'Maps & Places API icon',
-  },
-  {
-    name: 'Android Native APIs',
-    icon: '🔔',
-    iconLabel: 'Android Native APIs icon',
-  },
-  {
-    name: 'JUnit',
-    icon: '🧪',
-    iconLabel: 'Testing icon',
-  },
-  {
-    name: 'Espresso',
-    icon: '✅',
-    iconLabel: 'UI testing icon',
-  },
-  {
-    name: 'Mockito',
-    icon: '🧩',
-    iconLabel: 'Mocking framework icon',
-  },
-  {
-    name: 'GitHub',
-    icon: '🐙',
-    iconLabel: 'GitHub icon',
-  },
-   {
-    name: 'Open AI API',
-    icon: '🤖',
-    iconLabel: 'Open AI API icon',
-  },
-];
 
 const references = [
   { id: 1, text: 'G. Mark et al., “The cost of interrupted work,” ACM CHI, 2008.' },
@@ -286,20 +233,7 @@ export default function Domain() {
 
       <section>
         <h3 className="mb-4 text-xl font-semibold text-slate-900">Technologies Used</h3>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {technologies.map((item) => (
-            <div key={item.name} className="card-surface flex items-center gap-3 rounded-xl p-4 text-sm font-medium text-slate-700">
-              <span
-                role="img"
-                aria-label={item.iconLabel}
-                className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-teal-50 text-2xl"
-              >
-                {item.icon}
-              </span>
-              <span>{item.name}</span>
-            </div>
-          ))}
-        </div>
+        <TechStackIcons />
       </section>
 
       <section ref={referencesSectionRef} className="card-surface p-6 sm:p-8">
