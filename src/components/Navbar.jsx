@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import logoWithTagline from '../images/SmartTask_logo_with_text_tag_line.png';
 
 const navItems = [
   { label: 'Home', to: '/' },
@@ -23,8 +24,8 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
       <nav className="page-container flex items-center justify-between py-3">
-        <NavLink to="/" className="text-lg font-bold text-teal-700" onClick={() => setOpen(false)}>
-          SmartTask
+        <NavLink to="/" className="block" onClick={() => setOpen(false)}>
+          <img src={logoWithTagline} alt="SmartTask logo" className="h-12 w-auto" />
         </NavLink>
 
         <button
