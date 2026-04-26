@@ -21,7 +21,7 @@ export default function TechStackIcons() {
       {techStackIcons.map((item) => (
         <div key={item.name} className="card-surface flex items-center gap-3 rounded-xl p-4 text-sm font-medium text-slate-700">
           {item.imageSrc ? (
-            <img src={item.imageSrc} alt={`${item.name} icon`} className="h-10 w-10 object-contain" />
+            <img src={item.imageSrc} alt={`${item.name} icon`} className="h-16 w-16 object-contain" />
           ) : (
             <i className={`${item.iconClass} tech-stack-icon ci-4x`} aria-hidden="true" />
           )}
