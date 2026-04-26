@@ -13,7 +13,7 @@ export default function Milestones() {
               {item.date}
             </span>
             <div className="absolute left-0 top-10 h-6 w-6 -translate-x-1/2 rounded-full border-4 border-white bg-teal-500 shadow" />
-            <MilestoneCard title={item.title} description={item.description} marks={item.marks} />
+            <MilestoneCard title={item.title} description={item.description} marks={item.marks} reference={item.reference} />
           </div>
         ))}
       </div>

@@ -1,6 +1,22 @@
-export default function DocumentCard({ title, description, status, buttonText, fileUrl }) {
+import { useEffect, useRef } from 'react';
+
+export default function DocumentCard({ id, title, description, status, buttonText, fileUrl, isHighlighted }) {
+  const cardRef = useRef(null);
+
+  useEffect(() => {
+    if (isHighlighted && cardRef.current) {
+      cardRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }, [isHighlighted]);
+
   return (
-    <div className="card-surface flex h-full flex-col p-6">
+    <div
+      id={id}
+      ref={cardRef}
+      className={`card-surface flex h-full flex-col p-6 transition-all duration-1000 ${
+        isHighlighted ? 'highlight-card ring-2 ring-amber-400 ring-offset-2 ring-offset-slate-50' : ''
+      }`}
+    >
       <h3 className="text-lg font-semibold text-slate-900">{title}</h3>
       <p className="mt-2 flex-1 text-sm leading-6 text-slate-600">{description}</p>
       <div className="mt-4 flex items-center justify-between gap-3">
