@@ -78,11 +78,11 @@ export default function Home() {
 
         <div className="grid gap-6 lg:grid-cols-2">
           <div className="card-surface p-6">
-            <h3 className="text-xl font-bold text-slate-900">Problem Addressed</h3>
+            <h3 className="text-lg font-semibold text-slate-900">Problem Addressed</h3>
             <img
               src={problemSolvingIcon}
               alt="Problem solving icon"
-              className="mx-auto mt-5 h-28 w-28 object-contain"
+              className="mx-auto mt-5 h-36 w-36 object-contain"
             />
             <p className="mt-4 leading-7 text-slate-600">
               Traditional task management applications mostly depend on static task lists and fixed reminders.
@@ -93,11 +93,11 @@ export default function Home() {
           </div>
 
           <div className="card-surface p-6">
-            <h3 className="text-xl font-bold text-slate-900">Implemented Solution</h3>
+            <h3 className="text-lg font-semibold text-slate-900">Implemented Solution</h3>
             <img
               src={mobileAppImage}
               alt="SmartTask mobile app"
-              className="mx-auto mt-5 h-28 w-28 object-contain"
+              className="mx-auto mt-5 h-40 w-40 object-contain"
             />
             <p className="mt-4 leading-7 text-slate-600">
               The application follows a modular workflow where tasks are created, context is captured, task relevance
