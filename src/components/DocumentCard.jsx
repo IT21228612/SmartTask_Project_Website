@@ -13,8 +13,8 @@ export default function DocumentCard({ id, title, description, status, buttonTex
     <div
       id={id}
       ref={cardRef}
-      className={`card-surface flex h-full flex-col p-6 transition-all duration-1000 ${
-        isHighlighted ? 'highlight-card ring-2 ring-amber-400 ring-offset-2 ring-offset-slate-50' : ''
+      className={`card-surface relative flex h-full flex-col overflow-hidden p-6 transition-all duration-700 ${
+        isHighlighted ? 'border-beam-card border-2 border-amber-300 shadow-md shadow-amber-100' : ''
       }`}
     >
       <h3 className="text-lg font-semibold text-slate-900">{title}</h3>
