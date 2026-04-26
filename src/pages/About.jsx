@@ -23,6 +23,7 @@ const people = [
     name: 'Ms. Dilani Lunugalage',
     designation: 'Lecturer',
     institution: 'Sri Lanka Institute of Information Technology (SLIIT)',
+    emails: [{ label: 'Email', value: 'dilani.l@sliit.lk' }],
     image: <img src={supervisorPhoto} alt="Ms. Dilani Lunugalage" className="h-28 w-28 rounded-full object-cover shadow" />,
   },
   {
@@ -32,6 +33,10 @@ const people = [
     studentId: 'IT21228612',
     institution: 'Sri Lanka Institute of Information Technology (SLIIT)',
     degree: 'BSc (Hons) in Information Technology Specialising in Software Engineering',
+    emails: [
+      { label: 'SLIIT student mail', value: 'it21228612@my.sliit.lk' },
+      { label: 'Personal', value: 'jeewantha.jds@gmail.com' },
+    ],
     image: <UserPlaceholder label="Researcher placeholder avatar" />,
   },
   {
@@ -100,6 +105,18 @@ export default function About() {
                   <div>
                     <dt className="font-semibold text-slate-700">Degree</dt>
                     <dd className="text-slate-600">{person.degree}</dd>
+                  </div>
+                )}
+                {person.emails?.length > 0 && (
+                  <div>
+                    <dt className="font-semibold text-slate-700">Email{person.emails.length > 1 ? 's' : ''}</dt>
+                    <dd className="space-y-1 text-slate-600">
+                      {person.emails.map((email) => (
+                        <div key={email.value}>
+                          {email.label}: <a href={`mailto:${email.value}`} className="text-indigo-600 hover:underline">{email.value}</a>
+                        </div>
+                      ))}
+                    </dd>
                   </div>
                 )}
               </dl>
