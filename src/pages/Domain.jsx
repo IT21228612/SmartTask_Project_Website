@@ -3,11 +3,7 @@ import SectionTitle from '../components/SectionTitle';
 import systemDiagram from '../project_files/system_diagram.jpg';
 
 const technologies = [
-  {
-    name: 'React and Tailwind CSS for website',
-    icon: '🌐',
-    iconLabel: 'Web technologies icon',
-  },
+  
   {
     name: 'Java for Android application',
     icon: '☕',
@@ -24,14 +20,14 @@ const technologies = [
     iconLabel: 'Database icon',
   },
   {
-    name: 'Google Maps API',
+    name: 'Google Maps & Places API',
     icon: '📍',
-    iconLabel: 'Maps API icon',
+    iconLabel: 'Maps & Places API icon',
   },
   {
-    name: 'Android Notification API',
+    name: 'Android Native APIs',
     icon: '🔔',
-    iconLabel: 'Notification API icon',
+    iconLabel: 'Android Native APIs icon',
   },
   {
     name: 'JUnit',
@@ -52,6 +48,11 @@ const technologies = [
     name: 'GitHub',
     icon: '🐙',
     iconLabel: 'GitHub icon',
+  },
+   {
+    name: 'Open AI API',
+    icon: '🤖',
+    iconLabel: 'Open AI API icon',
   },
 ];
 
