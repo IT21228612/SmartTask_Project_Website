@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import FeatureCard from '../components/FeatureCard';
 import SectionTitle from '../components/SectionTitle';
+import problemSolvingIcon from '../images/problem-solving-icon.svg';
+import mobileAppImage from '../images/mobileApp_image1.png';
 
 const features = [
   {
@@ -77,6 +79,11 @@ export default function Home() {
         <div className="grid gap-6 lg:grid-cols-2">
           <div className="card-surface p-6">
             <h3 className="text-xl font-bold text-slate-900">Problem Addressed</h3>
+            <img
+              src={problemSolvingIcon}
+              alt="Problem solving icon"
+              className="mx-auto mt-5 h-28 w-28 object-contain"
+            />
             <p className="mt-4 leading-7 text-slate-600">
               Traditional task management applications mostly depend on static task lists and fixed reminders.
               This often causes missed reminders, unnecessary interruptions, and extra mental effort. SmartTask
@@ -87,6 +94,11 @@ export default function Home() {
 
           <div className="card-surface p-6">
             <h3 className="text-xl font-bold text-slate-900">Implemented Solution</h3>
+            <img
+              src={mobileAppImage}
+              alt="SmartTask mobile app"
+              className="mx-auto mt-5 h-28 w-28 object-contain"
+            />
             <p className="mt-4 leading-7 text-slate-600">
               The application follows a modular workflow where tasks are created, context is captured, task relevance
               is calculated, task order is updated, and notifications are delivered only when suitable. Advanced
