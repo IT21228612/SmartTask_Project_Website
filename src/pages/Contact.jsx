@@ -13,9 +13,11 @@ export default function Contact() {
         <div className="card-surface p-6 sm:p-8">
           <h3 className="text-lg font-semibold text-slate-900">Contact Information</h3>
           <div className="mt-4 space-y-3 text-sm text-slate-600">
-            <p>Email: desilva@example.com</p>
+            <p>Project ID: 25-26J-531</p>
             <p>Project: SmartTask Context Aware Mobile To Do List</p>
             <p>Institution: Sri Lanka Institute of Information Technology</p>
+            <p>Email: jeewantha.jds@gmail.com</p>
+            
           </div>
         </div>
 
