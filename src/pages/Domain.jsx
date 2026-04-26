@@ -3,16 +3,56 @@ import SectionTitle from '../components/SectionTitle';
 import systemDiagram from '../project_files/system_diagram.jpg';
 
 const technologies = [
-  'React and Tailwind CSS for website',
-  'Java for Android application',
-  'Android Studio',
-  'SQLite or Room',
-  'Google Maps API',
-  'Android Notification API',
-  'JUnit',
-  'Espresso',
-  'Mockito',
-  'GitHub',
+  {
+    name: 'React and Tailwind CSS for website',
+    icon: '🌐',
+    iconLabel: 'Web technologies icon',
+  },
+  {
+    name: 'Java for Android application',
+    icon: '☕',
+    iconLabel: 'Java icon',
+  },
+  {
+    name: 'Android Studio',
+    icon: '🤖',
+    iconLabel: 'Android Studio icon',
+  },
+  {
+    name: 'SQLite or Room',
+    icon: '🗄️',
+    iconLabel: 'Database icon',
+  },
+  {
+    name: 'Google Maps API',
+    icon: '📍',
+    iconLabel: 'Maps API icon',
+  },
+  {
+    name: 'Android Notification API',
+    icon: '🔔',
+    iconLabel: 'Notification API icon',
+  },
+  {
+    name: 'JUnit',
+    icon: '🧪',
+    iconLabel: 'Testing icon',
+  },
+  {
+    name: 'Espresso',
+    icon: '✅',
+    iconLabel: 'UI testing icon',
+  },
+  {
+    name: 'Mockito',
+    icon: '🧩',
+    iconLabel: 'Mocking framework icon',
+  },
+  {
+    name: 'GitHub',
+    icon: '🐙',
+    iconLabel: 'GitHub icon',
+  },
 ];
 
 const references = [
@@ -247,8 +287,15 @@ export default function Domain() {
         <h3 className="mb-4 text-xl font-semibold text-slate-900">Technologies Used</h3>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {technologies.map((item) => (
-            <div key={item} className="card-surface rounded-xl p-4 text-sm font-medium text-slate-700">
-              {item}
+            <div key={item.name} className="card-surface flex items-center gap-3 rounded-xl p-4 text-sm font-medium text-slate-700">
+              <span
+                role="img"
+                aria-label={item.iconLabel}
+                className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-teal-50 text-2xl"
+              >
+                {item.icon}
+              </span>
+              <span>{item.name}</span>
             </div>
           ))}
         </div>
