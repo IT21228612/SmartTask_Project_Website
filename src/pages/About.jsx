@@ -1,6 +1,7 @@
 import SectionTitle from '../components/SectionTitle';
 
 const supervisorPhoto = new URL('../images/supervisor_1.JPG', import.meta.url).href;
+const researcherPhoto = new URL('../images/user_1.png', import.meta.url).href;
 
 function UserPlaceholder({ label }) {
   return (
@@ -37,7 +38,7 @@ const people = [
       { label: 'SLIIT student mail', value: 'it21228612@my.sliit.lk' },
       { label: 'Personal', value: 'jeewantha.jds@gmail.com' },
     ],
-    image: <UserPlaceholder label="Researcher placeholder avatar" />,
+    image: <img src={researcherPhoto} alt="Mr. De Silva S.J.W." className="h-28 w-28 rounded-full object-cover shadow" />,
   },
   {
     order: '3',
