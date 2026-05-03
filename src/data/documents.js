@@ -41,13 +41,13 @@ const documents = [
     id: 'ui-ux-video-link',
     title: 'UI/UX Demo Video Link',
     description: 'Reference link to the UI/UX demonstration video submission for PP2 checklist.',
-    ...getAvailability('UI_UX_demo_video_Link.txt'),
+    ...getAvailability('UI_UX_demo_video_Link.pdf'),
   },
   {
     id: 'git-repo-link',
     title: 'Git Repository Link',
     description: 'Reference link file containing the SmartTask project repository URL used for PP1 checklist.',
-    ...getAvailability('Git_Repo_Link.txt'),
+    ...getAvailability('Git_Repo_Link.pdf'),
   },
 ];
 
