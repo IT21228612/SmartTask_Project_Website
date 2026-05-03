@@ -43,6 +43,14 @@ const documents = [
     description: 'Reference link to the UI/UX demonstration video submission for PP2 checklist.',
     ...getAvailability('UI_UX_demo_video_Link.pdf'),
   },
+
+  {
+    id: 'app-download-link',
+    title: 'App Download Link',
+    description: 'Reference file containing the download link for the SmartTask Android application build.',
+    ...getAvailability('App_download_link.pdf'),
+  },
+
   {
     id: 'git-repo-link',
     title: 'Git Repository Link',
