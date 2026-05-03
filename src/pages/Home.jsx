@@ -3,6 +3,7 @@ import FeatureCard from '../components/FeatureCard';
 import SectionTitle from '../components/SectionTitle';
 import problemSolvingIcon from '../images/problem-solving-icon.svg';
 import mobileAppImage from '../images/mobileApp_image1.png';
+import homePageHeroBannerImage from '../images/home_page_hero_banner_image.png';
 
 const features = [
   {
@@ -38,35 +39,44 @@ const highlights = [
 export default function Home() {
   return (
     <div className="space-y-16 pb-4 pt-10">
-      <section className="card-surface bg-gradient-to-br from-teal-600 to-cyan-600 p-8 text-white sm:p-12">
-        <p className="mb-4 inline-flex rounded-full bg-white/15 px-4 py-2 text-sm font-semibold text-cyan-50">
-          Project ID: 25-26J-531
-        </p>
+      <section
+        className="card-surface relative overflow-hidden bg-slate-100"
+        style={{
+          backgroundImage: `url(${homePageHeroBannerImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
+        <div className="min-h-[560px] bg-white/45 p-8 sm:p-12 lg:w-3/5 lg:bg-white/35">
+          <p className="mb-5 inline-flex rounded-full bg-teal-100/95 px-4 py-2 text-sm font-semibold text-teal-900">
+            Project ID: 25-26J-531
+          </p>
 
-        <h1 className="text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">
-          SmartTask: Context Aware Mobile To Do List for Intelligent Task Management
-        </h1>
+          <h1 className="text-3xl font-bold leading-tight text-slate-900 sm:text-4xl lg:text-5xl">
+            SmartTask: Context Aware Mobile To Do List for Intelligent Task Management
+          </h1>
 
-        <p className="mt-6 max-w-3xl text-base leading-7 text-cyan-50 sm:text-lg">
-          SmartTask is a context aware mobile task management application developed to reduce cognitive overload,
-          poorly timed reminders, and manual task prioritization. The system uses real time context such as
-          location, time, activity, calendar state, and device state to identify relevant tasks and deliver suitable
-          notifications.
-        </p>
+          <p className="mt-6 max-w-2xl text-base leading-7 text-slate-700 sm:text-lg">
+            SmartTask is a context aware mobile task management application designed to reduce cognitive overload,
+            poorly timed reminders, and manual task prioritization. The system uses real time context to identify
+            relevant tasks and deliver suitable notifications.
+          </p>
 
-        <div className="mt-8 flex flex-wrap gap-3">
-          <Link
-            to="/documents"
-            className="rounded-xl bg-white px-5 py-3 text-sm font-semibold text-teal-700 shadow hover:bg-slate-100"
-          >
-            View Project Documents
-          </Link>
-          <Link
-            to="/domain"
-            className="rounded-xl border border-cyan-100 px-5 py-3 text-sm font-semibold text-white hover:bg-white/10"
-          >
-            Explore Research Domain
-          </Link>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Link
+              to="/documents"
+              className="rounded-xl bg-teal-600 px-5 py-3 text-sm font-semibold text-white shadow-md hover:bg-teal-700"
+            >
+              View Project Documents
+            </Link>
+            <Link
+              to="/domain"
+              className="rounded-xl border border-teal-600 bg-white/95 px-5 py-3 text-sm font-semibold text-teal-700 hover:bg-teal-50"
+            >
+              Explore Research Domain
+            </Link>
+          </div>
         </div>
       </section>
 
